@@ -1,0 +1,31 @@
+trigger:
+  branches:
+    include:
+      - main
+      - development
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.10'
+
+- script: |
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt
+  displayName: 'Install dependencies'
+
+- script: |
+    pylint app || true
+  displayName: 'Run Pylint'
+
+- script: |
+    pytest --cov=app --cov-report=xml --cov-fail-under=80
+  displayName: 'Run tests with coverage'
+
+- task: PublishCodeCoverageResults@2
+  inputs:
+    codeCoverageTool: 'Cobertura'
+    summaryFileLocation: 'coverage.xml'
