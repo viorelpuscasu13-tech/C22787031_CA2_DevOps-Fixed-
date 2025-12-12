@@ -164,6 +164,7 @@ steps:
     pytest tests --cov=calculator --cov-fail-under=80
   displayName: 'Run unit tests with coverage (80% min)'
 ```
+<img width="1058" height="437" alt="image" src="https://github.com/user-attachments/assets/2e31f0f1-5bc8-4c8b-b6cd-530d171b63f3" />
 
 ## Branch Policies and Protection
 
