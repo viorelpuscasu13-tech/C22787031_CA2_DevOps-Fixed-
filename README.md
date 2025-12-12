@@ -165,6 +165,11 @@ steps:
   displayName: 'Run unit tests with coverage (80% min)'
 ```
 
+<img width="1335" height="926" alt="image" src="https://github.com/user-attachments/assets/7df569b8-dc51-484c-9d81-a74669bc6799" />
+
+
+
+
 ## Branch Policies and Protection
 
 Branch protection rules are configured on GitHub to enforce good CI/CD practices. Branch protection ensures that nobody can accidentally break the main branch. It forces developers to follow a good CI practices.
