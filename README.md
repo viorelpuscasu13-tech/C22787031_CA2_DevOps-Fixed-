@@ -165,6 +165,13 @@ steps:
   displayName: 'Run unit tests with coverage (80% min)'
 ```
 <img width="1058" height="437" alt="image" src="https://github.com/user-attachments/assets/2e31f0f1-5bc8-4c8b-b6cd-530d171b63f3" />
+<img width="1342" height="1136" alt="image" src="https://github.com/user-attachments/assets/a23cfa25-0058-4116-9da6-a11c7015365a" />
+
+<img width="1058" height="437" alt="image" src="https://github.com/user-attachments/assets/0210258d-daa1-4bf6-94d5-9e18983a7583" />
+
+
+
+
 
 ## Branch Policies and Protection
 
